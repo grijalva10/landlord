@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:company_name",
+ "creation": "2021-10-07 09:05:07.485426",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company_name",
+  "properties"
+ ],
+ "fields": [
+  {
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "COMPANY NAME",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "properties",
+   "fieldtype": "Table",
+   "label": "PROPERTIES",
+   "options": "Properties"
+  }
+ ],
+ "icon": "user",
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Property",
+   "link_fieldname": "property_owner"
+  }
+ ],
+ "modified": "2021-10-07 09:15:25.164661",
+ "modified_by": "Administrator",
+ "module": "Landlord",
+ "name": "Landlord",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "company_name",
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "company_name",
+ "track_changes": 1
+}
